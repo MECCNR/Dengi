@@ -9,11 +9,11 @@ public class Main {
         int bonus = addMoney / 100;
         // бонус по акции
 
-        int all_money = money + addMoney;
+        int allMoney = money + addMoney;
         // общее кол-во денег при пополнении счёта
 
         if (addMoney > 1000) {
-            all_money = all_money + bonus;
+            allMoney = allMoney + bonus;
         }
         // общее кол-во денег при пополнении счёта вместе с бонусом акции (при учёте того, если условие выполнено)
 
@@ -21,6 +21,6 @@ public class Main {
         if (addMoney > 1000) {
             System.out.println("Вы активировали акцию \"Получи рубль за каждые 100!\". Ваш бонус составляет: " + bonus);
         }
-        System.out.println("Итоговый счёт: " + all_money);
+        System.out.println("Итоговый счёт: " + allMoney);
     }
 }
